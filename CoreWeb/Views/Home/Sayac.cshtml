@@ -1,0 +1,25 @@
+﻿@model CoreWeb.Models.Fatura
+@{
+    ViewData["Title"] = "Sayac";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Sonuc</h2>
+
+
+<div class="container">
+    <div class="form-group">
+        <label>Atik Su Toplami</label>
+        @Html.TextBoxFor(model => model.AtikSuToplami)
+
+        <label>Ara Toplam</label>
+        @Html.TextBoxFor(model => model.AraToplam)
+
+        <label>Genel Toplam</label>
+        @Html.TextBoxFor(model => model.GenelToplam)
+    </div>
+</div>
+
+
+
+
